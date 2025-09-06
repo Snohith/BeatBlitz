@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lavishly+Yours&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    background-color: rgb(110, 109, 106);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+.logo img{
+    margin: 10px 10px;
+    height: 6vh;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.container{
+    height: 75vh;
+    margin: 20px 50px;
+    background-color: black;
+    color: white;
+    background-image: url('banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.songPlayer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 0px 50px;
+    justify-content: center;
+    text-align: center;
+    height: 65px;
+    border-radius: 20px;
+
+}
+.songlist img{
+    height:40px;
+    border-radius: 20px;
+}
+.songlist{
+    display: flex;
+    border-radius: 30px;
+    border: solid red;
+    width: 30%;
+    margin: 30px 30px;   
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    
+    margin: 40px 40px;
+    font-size: 250%;
+    font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+i{
+    cursor: pointer;
+}
+#progressBar{
+    cursor: pointer;
+    margin-left: 80px;
+    margin-right:80px ;
+    margin-bottom: 8px;
+}
+#beats{
+    position: relative;
+    height: 20px;
+    width: 200px;
+    left: -400px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.playButtons{
+    position:relative;
+    left:-80px;
+}
+button{
+    border: none;
+     color: white;
+    background: transparent;
+    margin: 25px 25px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+}

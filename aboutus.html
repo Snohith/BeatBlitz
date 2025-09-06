@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | BeatBlitz</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Lavishly+Yours&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      font-family: "DM Serif Text", serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin-bottom: 1.4em;
+      font-size: 1.1em;
+    }
+
+    .homebutton {
+      background-color: transparent;
+      color: #333;
+      font-family: "DM Serif Text", serif;
+      font-weight: 400;
+      font-style: normal;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 4px;
+    }
+
+    .homebutton:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About BeatBlitz</h1>
+    <p>
+      Music isn’t just sound. It’s memory, emotion, connection—and we built BeatBlitz to bring that magic closer to you.
+    </p>
+    <h2>Built for Listeners, by Listeners</h2>
+    <p>
+      BeatBlitz is indie at heart. No ads interrupting your flow. No hidden fees. Just a clean, beautiful space to get lost in music.
+    </p>
+
+    <button class="homebutton" id="homebutton">Back to Home</button>
+  </div>
+
+  <footer>
+    &copy; 2025 BeatBlitz. All rights reserved.
+  </footer>
+  <script>
+    let button=document.getElementById("homebutton");
+    button.addEventListener('click',()=>{
+        window.location.href="home.html";
+    })
+  </script>
+</body>
+</html>

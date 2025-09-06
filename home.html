@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵BeatBlitz - Listening is Everything.</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lavishly+Yours&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+      body {
+        background-color: rgb(248, 248, 248);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        color: white;
+      }
+
+      .logo img {
+        margin: 10px 10px;
+        height: 6vh;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      button {
+        border: none;
+        color: white;
+        background: transparent;
+        margin: 25px 25px;
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+      }
+
+      button:hover {
+        color: rgb(226, 105, 233);
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        height: 85vh;
+        margin: 20px 50px;
+        background-color: rgb(3, 3, 3);
+        color: white;
+        border-radius: 20px;
+        padding: 20px;
+        justify-items: center;
+      }
+
+      .child1,
+      .child2,
+      .child3,
+      .child4,
+      .child5,
+      .child6 {
+        background-color: whitesmoke;
+        height: 330px;
+        width: 330px;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-image: url(https://imgs.search.brave.com/bhWPWc4nVUp8-dQ4pzKcNMhTb0xH5dtu4aI6rng4ePI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kdnZ5/NmxvdXFjcjdqLmNs/b3VkZnJvbnQubmV0/L3Zpc3RhL0hPMDAw/MTYwMzEvaGVyb1Bv/c3Rlci9jb29saWUu/cG5n);
+        background-size: 330px 330px;
+        background-repeat: no-repeat;
+      }
+
+      .mainBody {
+        height: 20vh;
+        margin: 20px 50px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding: 20px;
+        justify-items: center;
+      }
+
+      h1,
+      p {
+        margin: 25px 25px;
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+      }
+
+      footer {
+        background-color: gray;
+        text-align: center;
+        align-content: center;
+        height: 50px;
+        font-size: 125%;
+        margin: 20px 50px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="logo.png" alt="logo">
+        </li>
+        <button id="homePage">Home</button>
+        <button id="about">About Us</button>
+      </ul>
+    </nav>
+    <div class="mainBody">
+      <h1>♫ BeatBlitz - Your Ultimate Music Companion ♫♪</h1>
+      <p>Dive into a world of sound with unlimited streaming, curated playlists, and personalized recommendations. Whether you're working, relaxing, or exploring new genres, we bring the music that moves you—right when you need it.</p>
+    </div>
+    <div class="container">
+      <div id="box1" class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <div class="child4"></div>
+      <div class="child5"></div>
+      <div class="child6"></div>
+    </div>
+  </body>
+  <footer>© 2025 BeatBlitz. All rights reserved. </footer>
+  <script>
+    let childBox = document.getElementById("box1");
+    childBox.addEventListener('click', () => {
+      window.location.href = "main.html"
+    })
+    let button = document.getElementById("homePage")
+    button.addEventListener('click', () => {
+      window.location.href = "home.html";
+    })
+    let about = document.getElementById("about");
+    about.addEventListener('click', () => {
+      window.location.href = "aboutus.html";
+    })
+  </script>
+</html>
