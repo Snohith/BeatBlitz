@@ -18,7 +18,7 @@ let songs=[
 
 ]
 button.addEventListener('click',()=>{
-    window.location.href="home.html";
+    window.location.href="index.html";
 })
 masterPlay.addEventListener('click',()=>{
     if(audioElement.paused || audioElement.currentTime<=0){
